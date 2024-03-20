@@ -1,0 +1,54 @@
+<form [formGroup]="etudiantForm" (ngSubmit)="login()">
+  <label for="nom">Nom:</label>
+  <input type="text" id="nom" name="nom" required formControlName="nom" /><br />
+
+  <label for="prenom">Prénom:</label>
+  <input
+    type="text"
+    id="prenom"
+    name="prenom"
+    required
+    formControlName="prenom"
+  /><br />
+
+  <label for="rue">Rue:</label>
+  <input type="text" id="rue" name="rue" required formControlName="rue" /><br />
+
+  <label for="cp">Code Postal:</label>
+  <input type="text" id="cp" name="cp" required formControlName="cp" /><br />
+
+  <label for="ville">Ville:</label>
+  <input
+    type="text"
+    id="ville"
+    name="ville"
+    required
+    formControlName="ville"
+  /><br />
+
+  <label for="courriel">Courriel:</label>
+  <input
+    type="email"
+    id="courriel"
+    name="courriel"
+    required
+    formControlName="courriel"
+  /><br />
+
+  <label for="genre">Genre:</label>
+  <select id="genre" name="genre" required formControlName="genre">
+    <option value="homme">Homme</option>
+    <option value="femme">Femme</option></select
+  ><br />
+
+  <label for="age">Âge:</label>
+  <input
+    type="number"
+    id="age"
+    name="age"
+    required
+    formControlName="age"
+  /><br />
+
+  <button type="submit">Soumettre</button>
+</form>

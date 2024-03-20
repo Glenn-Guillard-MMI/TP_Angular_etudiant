@@ -1,0 +1,13 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.etudiant,
+.etudiant-paris,
+.etudiant-non-paris,
+.specialite {
+  border: 1px solid #ccc;
+  padding: 20px;
+}

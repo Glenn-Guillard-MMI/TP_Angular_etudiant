@@ -1,0 +1,19 @@
+<h1>Spécialité</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>libelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>
+        {{ item._idCSpec }}
+      </td>
+      <td>
+        {{ item._libelle }}
+      </td>
+    </tr>
+  </tbody>
+</table>

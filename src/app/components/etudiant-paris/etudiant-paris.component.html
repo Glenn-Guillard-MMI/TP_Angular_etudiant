@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Adresse</th>
+      <th>Mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <ng-container *ngIf="item._ville == 'Paris'">
+        <td>
+          {{ item._idCand }}
+        </td>
+        <td>
+          {{ item._nom }}
+        </td>
+        <td>
+          {{ item._prenom }}
+        </td>
+        <td>
+          {{ item._ville }}
+        </td>
+        <td>
+          {{ item._courriel }}
+        </td>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>
