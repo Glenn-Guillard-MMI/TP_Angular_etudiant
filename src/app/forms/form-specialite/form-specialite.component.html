@@ -1,4 +1,21 @@
-<form>
-  <input type="text" name="id" />
-  <input type="submit" />
+<form [formGroup]="SpeForm" (ngSubmit)="login()">
+  <label for="libelle">libelle:</label>
+  <input
+    type="text"
+    id="libelle"
+    name="libelle"
+    required
+    formControlName="libelle"
+  /><br />
+
+  <label for="idSpec">idSpec:</label>
+  <input
+    type="number"
+    id="idSpec"
+    name="idSpec"
+    required
+    formControlName="idSpec"
+  /><br />
+
+  <button type="submit">Soumettre</button>
 </form>
